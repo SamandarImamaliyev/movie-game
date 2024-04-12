@@ -16,6 +16,7 @@ let lettersArr = [];
 let tryCount = 5;
 let dublicateMovieArray = [];
 let yourScore = 0;
+let movieCount = 1;
 yourTry.textContent = tryCount;
 
 function getRandomMovie() {
@@ -61,7 +62,8 @@ function addLettersToSymbols(randomMovie, randomMovieSymbols) {
             dublicateMovieArray.pop();
             if (dublicateMovieArray.length === 0) {
                 yourScore++;
-                score.textContent = `${yourScore} out of 9`;
+                if (movies.length === 1)
+                    score.textContent = `${yourScore} out of ${movieCount}`;
             }
         }
         count++;
@@ -119,6 +121,9 @@ nextButton.addEventListener("click", (event) => {
     dublicateMovieArray = [];
     yourTry.textContent = tryCount;
     wrongLetter.innerHTML = "";
+
+    score.textContent = `${yourScore} out of ${movieCount}`;
+    movieCount++;
 
     randomMovie = getRandomMovie();
     randomMovieSymbols = getRandomMovieSymbols(randomMovie);
