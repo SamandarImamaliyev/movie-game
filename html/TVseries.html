@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url(../css/all.css);
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom/extra.css">
+</head>
+
+<body style="background-color: #060d17;">
+
+    <header>
+        <div class="container-fluid fs-2 py-2 textFormat text-danger d-flex">
+            <div class="container-fluid" style="position: relative;">
+                <div style="position: absolute;">
+                    <button id="back" class="btn btn-outline-danger m-2 px-3 ">
+                        <i class="fa-solid fa-angles-left" style="padding-right: 10px;"></i>
+                        Back</button>
+                </div>
+                <div class="text-end text-md-center m-2 m-md-0">
+                    <p>Find TV series</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-5">
+        <div class="container-fluid mt-3">
+            <div class="d-lg-flex justify-content-center">
+                <div class="col-12 col-lg-6 m-lg-2 mt-2">
+                    <img class="img-fluid rounded">
+                </div>
+                <div class="col-12 col-lg-6 m-lg-2 mt-2">
+                    <div class="rounded findName d-flex flex-column align-items-center pt-lg-5">
+                        <div class="text-dark d-flex textFormat">Try Count:
+                            <div class="ms-3 tryCount"> </div>
+                        </div>
+                        <div class="wrong-letters-none">Wrong letters: </div>
+                        <div class="writeName d-flex"></div>
+                        <div class="scoreText d-flex pt-5">Your Score:
+                            <div class="score ms-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-5 text-center d-grid">
+            <button id="next-button" class="btn btn-outline-danger next-button ">Next</button>
+            <button id="play-again" class="btn btn-outline-danger play-again-invisible"
+                onClick="window.location.reload();">Play again</button>
+        </div>
+    </section>
+
+    <section class="footer extraFooter">
+        <div class="container-fluid bg-danger text-center fs-2 py-2 rounded wrong-symbol-message-hidden">
+            <p>Wrong symbol, Only letters are accepted !</p>
+        </div>
+    </section>
+
+    <script src="../js/tvSeries.js"></script>
+</body>
+
+</html>

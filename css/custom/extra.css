@@ -1,0 +1,211 @@
+/* main page */
+.main {
+    height: 100vh;
+}
+
+.chooseGame {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+}
+
+.welcome {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+}
+
+.textFind {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    width: 300px;
+}
+
+.headerClass {
+    margin-bottom: 200px;
+}
+
+.textFormat {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+/* main page */
+
+/* movies starts */
+/* .image-shadow {
+    border: 3px solid #dc3545;
+} */
+
+.findName {
+    background-color: wheat;
+    height: 100%;
+}
+
+.writeName {
+    margin-top: 170px;
+}
+
+.extraFooter {
+    margin-top: 75px;
+}
+
+.letter {
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.correct-letter {
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.wrong-letters-none {
+    display: none;
+}
+
+.wrong-letters {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: block;
+}
+
+.wrong-symbol-message-hidden {
+    display: none;
+}
+
+.wrong-symbol-message {
+    /* margin-top: 20px; */
+    /* padding: 20px 0; */
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    color: white;
+    display: block;
+}
+
+.next-button {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+.next-button-invisible {
+    display: none;
+}
+
+.play-again-invisible {
+    display: none;
+}
+
+.play-again {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+.scoreText {
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+/* movies ends */
+
+
+@media(max-width:768px) {
+
+    /* main page */
+    .chooseGame {
+        font-size: 32px;
+    }
+
+    .welcome {
+        font-size: 48px;
+    }
+
+    .textFind {
+        font-size: 18px;
+        width: 240px;
+    }
+
+    /* main page */
+
+}
+
+@media(max-width:1832px) {
+    .letter {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .correct-letter {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    .textFormat {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:1472px) {
+    .letter {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .correct-letter {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .textFormat {
+        font-size: 20px;
+    }
+
+    .wrong-letters {
+        font-size: 20px;
+    }
+
+    .writeName {
+        margin-top: 100px;
+    }
+
+    .scoreText {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1182px) {
+    .letter {
+        margin-right: 4px;
+        font-size: 13px;
+    }
+
+    .correct-letter {
+        margin-right: 4px;
+        font-size: 16px;
+    }
+
+    .wrong-letters {
+        font-size: 20px;
+    }
+
+    .writeName {
+        margin-top: 80px;
+    }
+
+}
+
+@media(max-width:538px) {
+    .letter {
+        margin-right: 3px;
+        font-size: 8px;
+    }
+
+    .correct-letter {
+        font-size: 12px;
+    }
+
+}
